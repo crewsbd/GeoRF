@@ -3,9 +3,10 @@ from tkinter import ttk
 import tkintermapview
 from tkintermapview.canvas_position_marker import CanvasPositionMarker
 import Data
+import Secret
 
-db_string = "mongodb+srv://bdcrews:256168Apt@sandbox.xf5clle.mongodb.net/?retryWrites=true&w=majority"
-
+#oops.  You'll need to put the uid and password in Secret.py
+db_string = f"mongodb+srv://{Secret.uid}:{Secret.password}@sandbox.xf5clle.mongodb.net/?retryWrites=true&w=majority"
 
 class AppGeoRF(tk.Tk):
     def __init__(self):
