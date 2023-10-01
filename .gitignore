@@ -1,1 +1,4 @@
 /Sandbox/**
+/env/**
+__pycache__/AppGeoRF.cpython-310.pyc
+__pycache__/Data.cpython-310.pyc

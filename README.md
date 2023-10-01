@@ -1,40 +1,34 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+The purpose of this project is to be an exploration of Mongo DB and interacting with it using Python.
 
-The purpose of this project is to be an exploration of Mongo DB and interacting with it using LANGUAGE.
+I used VS Code as my editor and the Python language. I used pymongo to connect to a cloud database and tkinter to make the UI. The basic functionality of the program is that you can store records of radio stations in the database. The interface allows you to search for them and then modify or delete them. You can also use the map display to pin a location and save it.
 
-{Provide a description of the software that you wrote and how it integrates with a Cloud Database. Describe how to use your program.}
+My purpose for writing this software is to familiarize myself with MongoDB and using a library to do so. MongoDB queries are significanly different that a typical SQL query.
 
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running, a walkthrough of the code, and a view of the cloud database.}
-
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/m91MxceOKH4)
 
 # Cloud Database
 
-{Describe the cloud database you are using.}
+This project connects to an Atlas MongoDB.
 
-{Describe the structure of the database that you created.}
+The database is relatively simple. There are two collections (tables), frequencies and users. Each collection has documents to store information about radio stations and user credientials.
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+I use VS Code on a Mac as my development platform.
 
-{Describe the programming language that you used and any libraries.}
+I used Python with the PyMongo and tkinter libraries to create this application.
 
 # Useful Websites
 
-{Make a list of websites that you found helpful in this project}
 
-- [Web Site Name](http://url.link.goes.here)
-- [Web Site Name](http://url.link.goes.here)
+- [PyMongo Documentation](https://pymongo.readthedocs.io/en/stable/index.html)
+- [MongoDB Resources](https://www.mongodb.com/docs/drivers/pymongo/)
 
 # Future Work
 
-{Make a list of things that you need to fix, improve, and add in the future.}
+This project still has a way to go before it's complete. A few items I need to address are:
 
-- Item 1
-- Item 2
-- Item 3
+- Logging in is still less than ideal.  Destroying the TopLevel widget causes complications that I haven't figured out.
+- I need to be able to click on a queries record and have to smap widget center on it. This shouldn't be too hard.
